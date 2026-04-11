@@ -1,0 +1,98 @@
+/* ==========================================================================
+   1. VARIABLES & RESET
+   ========================================================================== */
+:root {
+    /* --- PALETTE JOUR (PAR DÉFAUT) --- */
+    --primary: #2c3e50;    /* Bleu sombre */
+    --accent: #27ae60;     /* Vert */
+    --accent-rgba: rgba(39, 174, 96, 1);
+    --light-bg: #f4f7f6;   /* Fond gris clair */
+    --white: #ffffff;      /* Blanc pur */
+    --text: #333;
+    --nav-bg: #ffffff;
+    --card-bg: #ffffff;
+    --border-color: #eee;
+    --skill-text: #666;
+
+    /* Couleurs spécifiques Hero (indépendantes du thème car sur image) */
+    --text-hero-main: #FFFFFF;
+    --text-hero-secondary: #7DF9FF; 
+    --btn-bg: #F8FAFD;                
+    --btn-text: #26D07C;              
+    --accent-glow: #26D07C;           
+    --overlay-color: rgba(11, 22, 34, 0.65); 
+    
+    --transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* --- PALETTE NUIT (ACTIVÉE VIA JS SUR LE BODY) --- */
+body.dark-mode {
+    --primary: #ecf0f1;    
+    --accent: #2ecc71;     /* Vert un peu plus vif pour le contraste */
+    --light-bg: #1a1a1a;   
+    --white: #121212;      /* Fond de page sombre */
+    --text: #e0e0e0;       
+    --nav-bg: #1a1a1a;
+    --card-bg: #242424;    /* Fond des cartes plus clair que le body */
+    --border-color: #333;
+    --skill-text: #bbb;
+}
+
+/* ==========================================================================
+   AJUSTEMENTS SPÉCIFIQUES MODE SOMBRE (VERSION DARK STEALTH)
+   ========================================================================== */
+
+/* 1. La photo d'identité : Bordure sombre pour se fondre dans le thème */
+body.dark-mode .hero-profile-pic {
+    border-color: var(--white) !important; 
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); 
+}
+
+/* 2. Les boutons (Explorer le portail & Voir mes projets) */
+body.dark-mode .hero-section .btn-primary, 
+body.dark-mode .hero-section .btn-secondary {
+    background-color: var(--white) !important; 
+    color: #ffffff !important;                
+    border: 1px solid var(--border-color) !important; 
+}
+
+/* 3. État au survol des boutons en mode nuit */
+body.dark-mode .hero-section .btn-primary:hover,
+body.dark-mode .hero-section .btn-secondary:hover {
+    background-color: var(--accent) !important; 
+    border-color: var(--accent) !important;
+    color: #ffffff !important;
+    transform: translateY(-3px);
+}
+
+/* 4. Titres de section en blanc pour le contraste */
+body.dark-mode .section-title,
+body.dark-mode .bg-image-overlay .section-title {
+    color: #ffffff !important;
+}
+
+body.dark-mode .section-title::before {
+    background-color: var(--accent) !important;
+}
+
+/* ==========================================================================
+   RESET & BASE
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--white); 
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}

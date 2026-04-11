@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Création de l'entête -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Matthieu GOUBERT | Géomaticien & Développeur SIG Webmapping</title>
+
+    <meta name="description" content="Portfolio de Matthieu Goubert : Analyse spatiale, statistiques territoriales et conception d'applications cartographiques interactives.">
+    <meta name="author" content="Matthieu Goubert">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+        
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+</head>
+
+<!-- Création du corps du site web-->
+<body>
+
+    <!-- Création de la barre de navigation -->
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <span class="name" data-i18n="nav_name">Matthieu Goubert - </span>
+                <span class="job-title" data-i18n="nav_job">Géomaticien</span>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="menu-burger" id="burger-click">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#" data-i18n="nav_home">Accueil</a></li>
+                    <li><a href="#about" data-i18n="nav_about">À propos</a></li>
+                    <li><a href="#competences" data-i18n="nav_skills">Compétences</a></li>
+                    <li><a href="#projets" data-i18n="nav_projects">Projets</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+
+                <button id="lang-toggle" class="theme-btn" aria-label="Switch Language">
+                    <span id="lang-text" style="font-weight: 800; font-size: 0.8rem;">EN</span>
+                </button>
+
+                <button id="theme-toggle" aria-label="Changer de thème" class="theme-btn">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Création de l'introduction-->
+        <section class="hero-section">
+            <img src="image/photo_identite.jpg" alt="Photo de Matthieu Goubert" class="hero-profile-pic">
+
+            <div class="hero-text">
+                <h1>Matthieu GOUBERT</h1>
+                <h2 data-i18n="hero_h2">Ingénieur Géomaticien | Développeur SIG Webmapping Full-stack</h2> 
+                
+                <p class="subtitle" data-i18n="hero_subtitle">Analyse et valorisation des données territoriales à travers des applications cartographiques interactives.</p>
+                <p class="tagline" data-i18n="hero_tagline">De la donnée à la décision : conception d’outils SIG pour comprendre les territoires.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn btn-primary" data-i18n="hero_btn_projects">→ Voir mes projets</a>
+                    <a href="lien-vers-portail.html" class="btn btn-secondary" data-i18n="hero_btn_portal">→ Explorer le portail</a>
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-down-btn" aria-label="Défiler vers À Propos">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+    </header>
+
+    <!-- Création du bloc 'A propos' -->
+    <main>
+        <section id="about" class="section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title" data-i18n="about_title">À propos</h2>
+                
+                <div class="about-intro">
+                    <div class="expertise-text">
+                        <p class="lead-text" data-i18n="about_lead">
+                            Ingénieur géomaticien de formation, j'ai choisi de spécialiser mon approche sur la <strong>maîtrise du flux de données spatiales</strong>.
+                        </p>
+                        <p data-i18n="about_p2">
+                            Mon métier consiste à orchestrer le parcours de l'information géographique : depuis son extraction et son traitement 
+                            <span class="tech-tag">(Python, R, PostGIS, ... )</span> jusqu'à sa valorisation dans des interfaces web interactives <strong>cross-platform</strong>
+                            <span class="tech-tag">(Leaflet, React, Cesium, ... )</span>.
+                        </p>
+                        <p data-i18n="about_p3">
+                            Je conçois des outils interactifs optimisés pour le <strong>terrain et la mobilité</strong>, garantissant un accès fluide à la donnée complexe, que ce soit sur poste fixe ou smartphone.                        
+                        </p>
+                        <p class="goal-text">
+                            <em data-i18n="about_goal">Mon objectif : garantir la continuité et l'intégrité de la donnée pour offrir une expérience de visualisation qui serve réellement la prise de décision.</em>
+                        </p>
+                    </div>
+
+                    <div class="history-text">
+                        <p data-i18n="about_history">
+                            Géomaticien de formation, j’ai débuté chez <strong>MENARD Terrassements</strong> sur des études de Défense Extérieure Contre les Incendies, ce qui m’a, par la suite, amené à m’orienter vers le <strong>développement SIG web</strong>. 
+                            J’ai ensuite approfondi ces domaines en <strong>Master SIGMA</strong> à Toulouse, en alternance au <strong>Conservatoire d'Espaces Naturels Pays de la Loire</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <h3 class="subtitle-centered" data-i18n="journey_title">Mon Parcours</h3>
+
+            <!-- Création de la timeline -->
+                <div class="about-flex-container">
+                    <div class="timeline">
+                        <div class="timeline-item clickable" data-index="5">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="date">2024 - Présent</span>
+                                <h4 data-i18n="time_sigma_app">Master SIGMA & Alternance</h4>
+                                <p data-i18n="time_sigma_app_loc"><strong>Toulouse INP - ENSAT</strong> / <strong>CEN Nantes</strong></p>
+                                <p class="details" data-i18n="time_sigma_app_desc">Analyse des ressources territoriales. Étude des écosystèmes et gestion de bases de données foncières.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item clickable" data-index="4">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="date">2024 - Présent</span>
+                                <h4 data-i18n="time_sigma_edu">Master SIGMA (Formation)</h4>
+                                <p><strong>Toulouse INP - ENSAT</strong></p>
+                                <p class="details" data-i18n="time_sigma_edu_desc">Sciences Géomatiques en Environnement et Aménagement du Territoire. Spécialisation en programmation informatique.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item clickable" data-index="3">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="date">2021 - 2024</span>
+                                <h4 data-i18n="time_menard">Chargé d'études SIG</h4>
+                                <p><strong>MENARD Terrassements</strong>, Isigny-sur-Mer</p>
+                                <p class="details" data-i18n="time_menard_desc">Gestion et expertise de données DECI et déploiement de SIG opérationnels pour les collectivités.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item clickable" data-index="2">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="date">2017 - 2021</span>
+                                <h4 data-i18n="time_licence">Licence Pro SIG DAT</h4>
+                                <p><strong>Université de Caen Normandie</strong></p>
+                                <p class="details" data-i18n="time_licence_desc">Diagnostic territorial, aménagement et maîtrise des outils fondamentaux (QGIS, ArcGIS, SQL).</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item clickable" data-index="1">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="date">2014 - 2017</span>
+                                <h4 data-i18n="time_bac">Baccalauréat Scientifique</h4>
+                                <p><strong>Lycée Sivard de Beaulieu</strong>, Carentan</p>
+                                <p class="details" data-i18n="time_bac_desc">Option Sciences de la Vie et de la Terre.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Création de la carte web -->
+                    <div class="map-wrapper">
+                        <div id="map"></div>
+                    </div>
+                </div>
+
+                <!-- Création du bloc des loisirs -->
+                <div class="interests-wrapper">
+                    <h3 class="subtitle-centered" data-i18n="outside_title">Et en dehors de la géomatique ...</h3>
+                    <div class="interests-container">
+                        <div class="interest-card">
+                            <div class="icon">🎾</div>
+                            <p data-i18n="int_tennis">Tennis</p>
+                            <span class="tooltip" data-i18n="int_tennis_tip">Compétition & Loisir</span>
+                        </div>
+                        <div class="interest-card">
+                            <div class="icon">🎸</div>
+                            <p data-i18n="int_metal">Metal</p>
+                            <span class="tooltip" data-i18n="int_metal_tip">Concerts & Festivals</span>
+                        </div>
+                        <div class="interest-card">
+                            <div class="icon">📚</div>
+                            <p data-i18n="int_reading">Lecture</p>
+                            <span class="tooltip" data-i18n="int_reading_tip">Histoire & BD</span>
+                        </div>
+                        <div class="interest-card">
+                            <div class="icon">💻</div>
+                            <p data-i18n="int_tech">Veille tech</p>
+                            <span class="tooltip" data-i18n="int_tech_tip">Innovations Web & SIG</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <!-- Création du bloc des compétences -->
+        <section id="competences" class="section-padding">
+            <div class="container">
+                <h2 class="section-title" data-i18n="skills_title">COMPÉTENCES</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="icon-fa"><i class="fas fa-satellite"></i></div>
+                        <h4 data-i18n="sk_acq">Acquisition de données</h4>
+                        <ul>
+                            <li>GNSS (Centipède, RTK)</li>
+                            <li>Télédétection (optique, indices)</li>
+                            <li data-i18n="sk_field">Collecte terrain (QField)</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="icon-fa"><i class="fas fa-database"></i></div>
+                        <h4 data-i18n="sk_proc">Traitement & Préparation</h4>
+                        <ul>
+                            <li>Géotraitements (MNT, réseau)</li>
+                            <li>Requêtes SQL</li>
+                            <li data-i18n="sk_auto">Automatisation (Python, PyQGIS)</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="icon-fa"><i class="fas fa-chart-line"></i></div>
+                        <h4 data-i18n="sk_stats">Analyse & Statistique</h4>
+                        <ul>
+                            <li>Analyse spatiale & thématique</li>
+                            <li>Statistiques (R, ANOVA)</li>
+                            <li data-i18n="sk_ml">Machine learning appliqué</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="icon-fa"><i class="fas fa-map-marked-alt"></i></div>
+                        <h4 data-i18n="sk_viz">Restitution</h4>
+                        <ul>
+                            <li>Cartographie (QGIS, ArcGIS)</li>
+                            <li>Sémiologie & datavisualisation</li>
+                            <li>Webmapping (Leaflet, JS)</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="icon-fa"><i class="fas fa-network-wired"></i></div>
+                        <h4 data-i18n="sk_infra">Infrastructure</h4>
+                        <ul>
+                            <li>GeoServer & PostGIS</li>
+                            <li>Conteneurisation (Docker)</li>
+                            <li>Versionnage (GitHub)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Création du bloc des projets réalisés -->
+        <section id="projets" class="section-padding bg-image-overlay">
+            <div class="container">
+                <h2 class="section-title" data-i18n="proj_title">Projets</h2>
+                <div class="projects-container">
+                    <article class="project-card">
+                        <div class="project-img" style="background-image: url('assets/img/projet1.jpg');"></div>
+                        <div class="project-content">
+                            <h4 data-i18n="proj_map">Carte interactive</h4>
+                            <p data-i18n="proj_soon">A venir [...]</p>
+                            <a href="#" class="btn-link" data-i18n="proj_link_soon">Bientôt disponible</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-img" style="background-image: url('assets/img/projet2.jpg');"></div>
+                        <div class="project-content">
+                            <h4 data-i18n="proj_dash">Dashboard</h4>
+                            <p data-i18n="proj_soon">A venir [...]</p>
+                            <a href="#" class="btn-link" data-i18n="proj_link_soon">Bientôt disponible</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Création du formulaire de contact -->
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <h2 class="section-title" data-i18n="contact_title">Contact</h2>
+                <div class="contact-flex">
+                    <form class="contact-form">
+                        <input type="text" name="name" placeholder="Nom" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" placeholder="Votre message" required></textarea>
+                        <button type="submit" class="btn btn-primary" data-i18n="contact_send">Envoyer</button>
+                    </form>
+                    
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> matthieugoubert3004@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Nantes / Toulouse, France</p>
+                        <div class="social-links">
+                            <a href="https://mapstodon.space/@leviastorm" target="_blank" title="Mastodon"><i class="fab fa-mastodon"></i></a>
+                            <a href="https://www.linkedin.com/in/matthieu-goubert-sig-web" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/MatthieuGoubs" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Création du pied de page -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Matthieu GOUBERT</h3>
+                    <p data-i18n="nav_job">Géomaticien & Développeur SIG Webmapping</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="https://mapstodon.space/@leviastorm" target="_blank"><i class="fab fa-mastodon"></i></a>
+                    <a href="https://www.linkedin.com/in/matthieu-goubert-sig-web" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/MatthieuGoubs" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:matthieugoubert3004@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Matthieu GOUBERT | HTML5, CSS3, JS, Leaflet & OSM</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="page_principale_anim.js"></script>
+
+</body>
+</html>
