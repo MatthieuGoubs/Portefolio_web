@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/responsive.css">
         
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="assets/imgage/favicon.png">
 </head>
 
 <!-- Création du corps du site web-->
@@ -271,7 +271,7 @@
                 <h2 class="section-title" data-i18n="proj_title">Projets</h2>
                 <div class="projects-container">
                     <article class="project-card">
-                        <div class="project-img" style="background-image: url('assets/img/projet1.jpg');"></div>
+                        <div class="project-img" style="background-image: url('image/projet1.jpg');"></div>
                         <div class="project-content">
                             <h4 data-i18n="proj_map">Carte interactive</h4>
                             <p data-i18n="proj_soon">A venir [...]</p>
@@ -280,7 +280,7 @@
                     </article>
 
                     <article class="project-card">
-                        <div class="project-img" style="background-image: url('assets/img/projet2.jpg');"></div>
+                        <div class="project-img" style="background-image: url('image/projet2.jpg');"></div>
                         <div class="project-content">
                             <h4 data-i18n="proj_dash">Dashboard</h4>
                             <p data-i18n="proj_soon">A venir [...]</p>
@@ -299,13 +299,12 @@
                     <form class="contact-form" name="portfolio-contact" method="POST" data-netlify="true">
                         <input type="hidden" name="form-name" value="portfolio-contact" />
                         
-                        <input type="text" name="name" placeholder="Nom" data-i18n="[placeholder]contact_name_placeholder" required>
-                        <input type="email" name="email" placeholder="Email" data-i18n="[placeholder]contact_email_placeholder" required>
-                        <textarea name="message" placeholder="Votre message" data-i18n="[placeholder]contact_message_placeholder" required></textarea>
-                        
+                        <input type="text" name="name" placeholder="Nom" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" placeholder="Votre message" required></textarea>
                         <button type="submit" class="btn btn-primary" data-i18n="contact_send">Envoyer</button>
                     </form>
-        
+                            
                     <div class="contact-info">
                         <p><i class="fas fa-envelope"></i> matthieugoubert3004@gmail.com</p>
                         <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact_location">Nantes / Toulouse, France</span></p>
