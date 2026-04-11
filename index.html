@@ -296,16 +296,19 @@
             <div class="container">
                 <h2 class="section-title" data-i18n="contact_title">Contact</h2>
                 <div class="contact-flex">
-                    <form class="contact-form">
-                        <input type="text" name="name" placeholder="Nom" required>
-                        <input type="email" name="email" placeholder="Email" required>
-                        <textarea name="message" placeholder="Votre message" required></textarea>
+                    <form class="contact-form" name="portfolio-contact" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="portfolio-contact" />
+                        
+                        <input type="text" name="name" placeholder="Nom" data-i18n="[placeholder]contact_name_placeholder" required>
+                        <input type="email" name="email" placeholder="Email" data-i18n="[placeholder]contact_email_placeholder" required>
+                        <textarea name="message" placeholder="Votre message" data-i18n="[placeholder]contact_message_placeholder" required></textarea>
+                        
                         <button type="submit" class="btn btn-primary" data-i18n="contact_send">Envoyer</button>
                     </form>
-                    
+        
                     <div class="contact-info">
                         <p><i class="fas fa-envelope"></i> matthieugoubert3004@gmail.com</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Nantes / Toulouse, France</p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact_location">Nantes / Toulouse, France</span></p>
                         <div class="social-links">
                             <a href="https://mapstodon.space/@leviastorm" target="_blank" title="Mastodon"><i class="fab fa-mastodon"></i></a>
                             <a href="https://www.linkedin.com/in/matthieu-goubert-sig-web" target="_blank"><i class="fab fa-linkedin"></i></a>
