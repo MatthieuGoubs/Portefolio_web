@@ -259,29 +259,36 @@ document.addEventListener('DOMContentLoaded', function() {
     if (heroSection) navObserver.observe(heroSection);
 
     // ==========================================================================
-        // 9. Gestion de l'envoi du formulaire via Netlify
-        // ==========================================================================
-        const contactForm = document.querySelector(".contact-form");
-        
-        if (contactForm) {
-            contactForm.addEventListener("submit", function (e) {
-                e.preventDefault(); 
-        
-                const formData = new FormData(contactForm);
-        
-                fetch("/", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                    body: new URLSearchParams(formData).toString(),
-                })
-                .then(() => {
+    // 9. Gestion de l'envoi du formulaire via Netlify
+    // ==========================================================================
+    const contactForm = document.querySelector(".contact-form");
+    
+    if (contactForm) {
+        contactForm.addEventListener("submit", function (e) {
+            e.preventDefault(); 
+    
+            const formData = new FormData(contactForm);
+    
+            // AJOUT CRUCIAL : On indique à Netlify le nom du formulaire
+            // Ce nom doit être identique à celui dans ton HTML
+            formData.append("form-name", "portfolio-contact");
+    
+            fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString(),
+            })
+            .then((response) => {
+                if (response.ok) {
                     alert("Merci ! Votre message a bien été envoyé.");
                     contactForm.reset(); 
-                })
-                .catch((error) => {
-                    alert("Oups ! Une erreur est survenue : " + error);
-                });
-            }); 
-        } 
-    
-    });
+                } else {
+                    throw new Error("Erreur serveur");
+                }
+            })
+            .catch((error) => {
+                alert("Oups ! Une erreur est survenue : " + error);
+            });
+        }); 
+    }
+});     
