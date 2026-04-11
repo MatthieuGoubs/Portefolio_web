@@ -257,4 +257,31 @@ document.addEventListener('DOMContentLoaded', function() {
     }, { threshold: 0.1 });
 
     if (heroSection) navObserver.observe(heroSection);
-});
+
+    // ==========================================================================
+        // 9. Gestion de l'envoi du formulaire via Netlify
+        // ==========================================================================
+        const contactForm = document.querySelector(".contact-form");
+        
+        if (contactForm) {
+            contactForm.addEventListener("submit", function (e) {
+                e.preventDefault(); 
+        
+                const formData = new FormData(contactForm);
+        
+                fetch("/", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: new URLSearchParams(formData).toString(),
+                })
+                .then(() => {
+                    alert("Merci ! Votre message a bien été envoyé.");
+                    contactForm.reset(); 
+                })
+                .catch((error) => {
+                    alert("Oups ! Une erreur est survenue : " + error);
+                });
+            }); 
+        } 
+    
+    });
