@@ -49,10 +49,31 @@ document.addEventListener('DOMContentLoaded', function() {
             'sk_proc': 'Traitement & Préparation', 'sk_auto': 'Automatisation (Python, PyQGIS)',
             'sk_stats': 'Analyse & Statistique', 'sk_ml': 'Machine learning appliqué',
             'sk_viz': 'Restitution', 'sk_infra': 'Infrastructure',
-            'proj_title': 'Projets', 'proj_map': 'Carte interactive', 'proj_dash': 'Dashboard', 'proj_soon': 'A venir [...]', 'proj_link_soon': 'Bientôt disponible',
+
+            // Section des projets 
+            'proj_title': 'Projets',
+            // Projet 1 - Finistère
+            'proj1_title': 'Carte interactive du Finistère',
+            'proj1_desc': 'Classification supervisée sur l\'occupation des sols du Finistère',
+            // Projet 2 - A venir
+            'proj2_title': 'A venir [...]',
+            'proj2_desc': 'Projet en cours de développement.',
+            // Projet 3 - Ariège
+            'proj3_title': 'Dossier de l\'Ariège',
+            'proj3_desc': 'Étude territoriale et analyse spatiale du département de l\'Ariège.',
+            // Projet 4 - DECI
+            'proj4_title': 'Carte interactive DECI',
+            'proj4_desc': 'Analyse de la Défense Extérieure Contre les Incendies à l\'échelle communale.',
+            
+            'proj_view': 'Voir le projet',
+            'proj_soon': 'Bientôt disponible',
+            'contact_title': 'Contact', 'contact_send': 'Envoyer',
+
+            // Section des contacts 
             'contact_title': 'Contact', 'contact_send': 'Envoyer'
         },
-        'en': {
+
+            'en': {
             'nav_name': 'Matthieu Goubert - ', 'nav_job': 'Geomatics Specialist & Web Mapping GIS Developer',
             'nav_home': 'Home', 'nav_about': 'About', 'nav_skills': 'Skills', 'nav_projects': 'Projects', 'nav_contact': 'Contact',
             'hero_h2': 'Geospatial Engineer | Full-stack GIS Webmapping Developer',
@@ -81,7 +102,27 @@ document.addEventListener('DOMContentLoaded', function() {
             'sk_proc': 'Processing & Preparation', 'sk_auto': 'Automation (Python, PyQGIS)',
             'sk_stats': 'Analysis & Statistics', 'sk_ml': 'Applied Machine Learning',
             'sk_viz': 'Visualization', 'sk_infra': 'Infrastructure',
-            'proj_title': 'Projects', 'proj_map': 'Interactive Map', 'proj_dash': 'Dashboard', 'proj_soon': 'Coming soon [...]', 'proj_link_soon': 'Available soon',
+
+            // Section des projets 
+            'proj_title': 'Projects',
+            // Project 1
+            'proj1_title': 'Finistère Interactive Map',
+            'proj1_desc': 'Supervised classification of land cover in Finistère.',
+            // Project 2
+            'proj2_title': 'Coming soon [...]',
+            'proj2_desc': 'Project under development.',
+            // Project 3
+            'proj3_title': 'Ariège Report',
+            'proj3_desc': 'Territorial study and spatial analysis of the Ariège department.',
+            // Project 4
+            'proj4_title': 'DECI Interactive Map',
+            'proj4_desc': 'Interactive map presenting DECI analysis for the municipality.',
+            
+            'proj_view': 'View project',
+            'proj_soon': 'Coming soon',
+            'contact_title': 'Contact', 'contact_send': 'Send',
+
+            // Section des contacts 
             'contact_title': 'Contact', 'contact_send': 'Send'
         }
     };
