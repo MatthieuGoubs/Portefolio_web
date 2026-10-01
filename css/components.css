@@ -420,6 +420,11 @@
 .project-content { padding: 2rem; color: var(--text); }
 .project-content h4 { color: var(--primary); font-size: 1.4rem; margin-bottom: 1rem; }
 
+.project-subtitle { color: var(--accent); font-size: 1rem; margin: 1.2rem 0 0.6rem; }
+.project-list { padding-left: 1.2rem; line-height: 1.7; font-size: 0.95rem; }
+.project-list li { margin-bottom: 0.4rem; }
+.project-list .tech-tag { white-space: normal; }
+
 .btn-link { display: inline-block; margin-top: 1.5rem; color: var(--accent); text-decoration: none; font-weight: 700; }
 
 /* ==========================================================================

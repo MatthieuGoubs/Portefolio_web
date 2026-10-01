@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'hero_h2': 'Ingénieur Géomaticien | Développeur Web SIG Full-stack',
             'hero_subtitle': 'De la donnée à la décision : je conçois des applications cartographiques interactives et des outils SIG',
             'hero_tagline': 'pour analyser, valoriser et comprendre les territoires.',
-            'hero_btn_projects': '→ Voir mes projets', 'hero_btn_portal': '→ Explorer le portail',
+            'hero_btn_projects': '→ Voir mes projets', 'hero_btn_portal': '→ Explorer l\'API sur la DECI',
             'about_title': 'À propos',
             'about_lead': 'Ingénieur géomaticien de formation, j\'ai choisi de spécialiser mon approche sur la <strong>maîtrise du flux de données spatiales</strong>.',
             'about_p2': 'Mon métier consiste à orchestrer le parcours de l\'information géographique : depuis son extraction, son traitement et son analyse <span class="tech-tag">(Python, R, PostGIS, ... )</span> jusqu\'à sa valorisation dans des interfaces web interactives <strong>cross-platform</strong> <span class="tech-tag">(React, MapLibre, DeckGL, ... )</span>.',
@@ -64,7 +64,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // Projet 4 - DECI
             'proj4_title': 'Carte interactive DECI',
             'proj4_desc': 'Analyse de la Défense Extérieure Contre les Incendies à l\'échelle communale.',
-            
+            // Projet 5 - DECI-Analysis Pro
+            'proj5_title': 'DECI-Analysis Pro',
+            'proj5_desc': 'Application web full-stack d\'analyse de la défense incendie (React, FastAPI, PostGIS), conteneurisée et déployée en continu sur un VPS.',
+            'proj5_secu_title': 'Déploiement &amp; sécurité',
+            'proj5_secu_list': '<li><span class="tech-tag">Docker Compose</span> et déploiement continu <span class="tech-tag">GitHub Actions</span></li><li>Reverse proxy <span class="tech-tag">BunkerWeb</span> : HTTPS Let\'s Encrypt, pare-feu applicatif OWASP CRS, limitation de débit</li><li>Sécurisation du serveur : pare-feu, SSH par clé, validation des données côté API</li>',
+            'proj_app': 'Voir l\'application',
+
             'code_view': 'Code de la classification',
             'proj_view': 'Voir le projet',
             'proj_soon': 'Bientôt disponible',
@@ -80,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'hero_h2': 'Geospatial Engineer | Full-stack GIS Web Developer',
             'hero_subtitle': 'From data to decision-making: I design interactive mapping applications and GIS',
             'hero_tagline': 'tools to analyse, showcase and understand geographical areas.',
-            'hero_btn_projects': '→ View my projects', 'hero_btn_portal': '→ Explore the portal',
+            'hero_btn_projects': '→ View my projects', 'hero_btn_portal': '→ Explore the DECI API',
             'about_title': 'About Me',
             'about_lead': 'A GIS engineer by training, I have focused my expertise on <strong>mastering the geospatial data flow</strong>.',
             'about_p2': 'My job consists of orchestrating the journey of geographic information: its extraction, processing and analysis <span class="tech-tag">(Python, R, PostGIS, ... )</span> to its enhancement in <strong>cross-platform</strong> interactive web interfaces <span class="tech-tag">(React, MapLibre, DeckGL, ... )</span>.',
@@ -118,7 +124,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // Project 4
             'proj4_title': 'DECI Interactive Map',
             'proj4_desc': 'Interactive map presenting DECI analysis for the municipality.',
-            
+            // Project 5 - DECI-Analysis Pro
+            'proj5_title': 'DECI-Analysis Pro',
+            'proj5_desc': 'Full-stack web application for fire-fighting water supply analysis (React, FastAPI, PostGIS), containerised and continuously deployed on a VPS.',
+            'proj5_secu_title': 'Deployment &amp; security',
+            'proj5_secu_list': '<li><span class="tech-tag">Docker Compose</span> and continuous deployment with <span class="tech-tag">GitHub Actions</span></li><li><span class="tech-tag">BunkerWeb</span> reverse proxy: Let\'s Encrypt HTTPS, OWASP CRS web application firewall, rate limiting</li><li>Server hardening: firewall, key-only SSH, server-side API input validation</li>',
+            'proj_app': 'View the application',
+
             'code_view': 'Classification code',
             'proj_view': 'View project',
             'proj_soon': 'Coming soon',

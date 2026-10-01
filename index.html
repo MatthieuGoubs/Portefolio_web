@@ -74,7 +74,7 @@
                 
                 <div class="hero-buttons">
                     <a href="#projets" class="btn btn-primary" data-i18n="hero_btn_projects">→ Voir mes projets</a>
-                    <a href="lien-vers-portail.html" class="btn btn-secondary" data-i18n="hero_btn_portal">→ Explorer le portail</a>
+                    <a href="https://vps-75c04751.vps.ovh.net/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-i18n="hero_btn_portal">→ Explorer l'API sur la DECI</a>
                 </div>
             </div>
 
@@ -296,6 +296,21 @@
                             <h4 data-i18n="proj4_title">Carte interactive DECI</h4>
                             <p data-i18n="proj4_desc">Carte interractive présentant l'analyse DECI de la commune</p>
                             <a href="https://github.com/MatthieuGoubs/webmapp_deci" class="btn-link" data-i18n="proj_view">Voir le projet</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-img" style="background-image: url('image/image_webmap_poteau_incendie.png');"></div>
+                        <div class="project-content">
+                            <h4 data-i18n="proj5_title">DECI-Analysis Pro</h4>
+                            <p data-i18n="proj5_desc">Application web full-stack d'analyse de la défense incendie (React, FastAPI, PostGIS), conteneurisée et déployée en continu sur un VPS.</p>
+                            <h5 class="project-subtitle" data-i18n="proj5_secu_title">Déploiement &amp; sécurité</h5>
+                            <ul class="project-list" data-i18n="proj5_secu_list">
+                                <li><span class="tech-tag">Docker Compose</span> et déploiement continu <span class="tech-tag">GitHub Actions</span></li>
+                                <li>Reverse proxy <span class="tech-tag">BunkerWeb</span> : HTTPS Let's Encrypt, pare-feu applicatif OWASP CRS, limitation de débit</li>
+                                <li>Sécurisation du serveur : pare-feu, SSH par clé, validation des données côté API</li>
+                            </ul>
+                            <a href="https://vps-75c04751.vps.ovh.net/" target="_blank" rel="noopener noreferrer" class="btn-link" data-i18n="proj_app">Voir l'application</a>
                         </div>
                     </article>
 
