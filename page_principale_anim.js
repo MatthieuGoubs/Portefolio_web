@@ -69,7 +69,14 @@ document.addEventListener('DOMContentLoaded', function() {
             'proj5_desc': 'Application web full-stack d\'analyse de la défense incendie (React, FastAPI, PostGIS), conteneurisée et déployée en continu sur un VPS.',
             'proj5_secu_title': 'Déploiement &amp; sécurité',
             'proj5_secu_list': '<li><span class="tech-tag">Docker Compose</span> et déploiement continu <span class="tech-tag">GitHub Actions</span></li><li>Reverse proxy <span class="tech-tag">BunkerWeb</span> : HTTPS Let\'s Encrypt, pare-feu applicatif OWASP CRS, limitation de débit</li><li>Sécurisation du serveur : pare-feu, SSH par clé, validation des données côté API</li>',
+            // Projet 6 - Codes fonciers CEN
+            'proj6_title': 'Codes fonciers SQL - CEN Pays de la Loire',
+            'proj6_desc': 'Mise en place de codes SQL permettant la gestion et la visualisation des données foncières du CEN Pays de la Loire.',
+            // Projet 7 - Plugin Sites CEN
+            'proj7_title': 'Plugin Sites CEN',
+            'proj7_desc': 'Réalisation d\'un plugin pour la visualisation de la donnée foncière du CEN.',
             'proj_app': 'Voir l\'application',
+            'code_repo': 'Voir le code',
 
             'code_view': 'Code de la classification',
             'proj_view': 'Voir le projet',
@@ -129,7 +136,14 @@ document.addEventListener('DOMContentLoaded', function() {
             'proj5_desc': 'Full-stack web application for fire-fighting water supply analysis (React, FastAPI, PostGIS), containerised and continuously deployed on a VPS.',
             'proj5_secu_title': 'Deployment &amp; security',
             'proj5_secu_list': '<li><span class="tech-tag">Docker Compose</span> and continuous deployment with <span class="tech-tag">GitHub Actions</span></li><li><span class="tech-tag">BunkerWeb</span> reverse proxy: Let\'s Encrypt HTTPS, OWASP CRS web application firewall, rate limiting</li><li>Server hardening: firewall, key-only SSH, server-side API input validation</li>',
+            // Project 6 - CEN land SQL code
+            'proj6_title': 'Land Data SQL - CEN Pays de la Loire',
+            'proj6_desc': 'SQL code for managing and visualising the land ownership data of the CEN Pays de la Loire.',
+            // Project 7 - CEN Sites plugin
+            'proj7_title': 'CEN Sites Plugin',
+            'proj7_desc': 'Development of a plugin for visualising the CEN\'s land ownership data.',
             'proj_app': 'View the application',
+            'code_repo': 'View the code',
 
             'code_view': 'Classification code',
             'proj_view': 'View project',
